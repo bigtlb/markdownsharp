@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MarkdownSharpTests</RootNamespace>
     <AssemblyName>MarkdownSharpTests</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -31,6 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,10 +52,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821" />
-    <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -78,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="nunit-console\nunit-console.exe.config" />
+    <None Include="packages.config" />
     <None Include="source\perl\License.text" />
     <None Include="source\perl\Markdown.101.pl" />
     <None Include="source\perl\Markdown.102b8.pl" />
@@ -122,11 +129,6 @@
     <EmbeddedResource Include="testfiles\mdtest-1.1\Strong_and_em_together.html" />
     <EmbeddedResource Include="testfiles\mdtest-1.1\Tabs.html" />
     <EmbeddedResource Include="testfiles\mdtest-1.1\Tidyness.html" />
-    <Content Include="nunit-console\nunit-console-runner.dll" />
-    <Content Include="nunit-console\nunit-console.exe" />
-    <Content Include="nunit-console\nunit.core.dll" />
-    <Content Include="nunit-console\nunit.core.interfaces.dll" />
-    <Content Include="nunit-console\nunit.util.dll" />
     <Content Include="testfiles\mdtest-1.1\HTML_comment_edge_case.html" />
     <Content Include="testfiles\mstest-0.1\code-inside-list.html" />
     <Content Include="testfiles\mstest-0.1\line-endings-cr.html" />

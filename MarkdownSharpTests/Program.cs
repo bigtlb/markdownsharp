@@ -302,9 +302,9 @@ namespace MarkdownSharpTests
 
             var p = new Process();
 
-            string path = Path.Combine(Path.GetDirectoryName(testAssemblyLocation), @"nunit-console\nunit-console.exe");
-            path = path.Replace(@"\bin\Debug", "");
-            path = path.Replace(@"\bin\Release", "");
+            string path = Path.Combine(Path.GetDirectoryName(testAssemblyLocation), @"NUnit.Console.3.0.1\tools\nunit3-console.exe");
+            path = path.Replace(@"\bin\Debug", "\\..\\packages");
+            path = path.Replace(@"\bin\Release", "\\..\\packages");
             p.StartInfo.FileName = path;
             p.StartInfo.Arguments = "\"" + testAssemblyLocation + "\" /labels /nologo";
 

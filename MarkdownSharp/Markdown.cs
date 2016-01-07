@@ -85,7 +85,6 @@ software, even if advised of the possibility of such damage.
 
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -141,51 +140,8 @@ namespace MarkdownSharp
         /// <summary>
         /// Create a new Markdown instance using default options
         /// </summary>
-        public Markdown() : this(false)
+        public Markdown()
         {
-        }
-
-        /// <summary>
-        /// Create a new Markdown instance and optionally load options from a configuration
-        /// file. There they should be stored in the appSettings section, available options are:
-        /// 
-        ///     Markdown.StrictBoldItalic (true/false)
-        ///     Markdown.EmptyElementSuffix (">" or " />" without the quotes)
-        ///     Markdown.LinkEmails (true/false)
-        ///     Markdown.AutoNewLines (true/false)
-        ///     Markdown.AutoHyperlink (true/false)
-        ///     Markdown.AsteriskIntraWordEmphasis (true/false)
-        ///     
-        /// </summary>
-        public Markdown(bool loadOptionsFromConfigFile)
-        {
-            if (!loadOptionsFromConfigFile) return;
-
-            var settings = ConfigurationManager.AppSettings;
-            foreach (string key in settings.Keys)
-            {
-                switch (key)
-                {
-                    case "Markdown.AutoHyperlink":
-                        _autoHyperlink = Convert.ToBoolean(settings[key]);
-                        break;
-                    case "Markdown.AutoNewlines":
-                        _autoNewlines = Convert.ToBoolean(settings[key]);
-                        break;
-                    case "Markdown.EmptyElementSuffix":
-                        _emptyElementSuffix = settings[key];
-                        break;
-                    case "Markdown.LinkEmails":
-                        _linkEmails = Convert.ToBoolean(settings[key]);
-                        break;
-                    case "Markdown.StrictBoldItalic":
-                        _strictBoldItalic = Convert.ToBoolean(settings[key]);
-                        break;
-                    case "Markdown.AsteriskIntraWordEmphasis":
-                        _asteriskIntraWordEmphasis = Convert.ToBoolean(settings[key]);
-                        break;
-                }
-            }
         }
 
         /// <summary>
