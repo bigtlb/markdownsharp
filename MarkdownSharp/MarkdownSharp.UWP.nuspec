@@ -4,13 +4,14 @@
     <id>MarkdownSharp.UWP</id>
     <version>$version$</version>
     <title>MarkdownSharp.UWP</title>
-    <authors>jrummell, bigtlb</authors>
+    <authors>John Gruber, Milan Negovan, Jeff Atwood, jrummell, bigtlb</authors>
     <owners>Stack Exchange</owners>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
-    <projectUrl>https://github.com/jrummell/markdownsharp</projectUrl>
+    <projectUrl>https://github.com/bigtlb/markdownsharp.uwp.git</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Open source C# implementation of Markdown processor, as featured on Stack Overflow. NOTE: this package is not maintained by the project developers, I've simply made it available on NuGet.</description>
-    <copyright>Copyright 2015</copyright>
+    <description>UWP Package of MarkDownSharp, including recent patches and compiled regex.
+    Open source C# implementation of Markdown processor, as featured on Stack Overflow. NOTE: this package is not maintained by the project developers, I've simply made it available on NuGet.</description>
+    <copyright>Copyright 2016</copyright>
     <tags>markdown markdownsharp md stackexchange</tags>
   </metadata>
 </package>
