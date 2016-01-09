@@ -91,12 +91,6 @@
     <None Include="source\perl\Markdown.102b8.pl" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MarkdownSharp\MarkdownSharp.csproj">
-      <Project>{37619116-CCE8-465A-8B1F-081CA53364BB}</Project>
-      <Name>MarkdownSharp</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\nunit.framework.dll" />
     <None Include="benchmark\markdown-example-short-2.text" />

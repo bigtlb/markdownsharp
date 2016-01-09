@@ -1,15 +1,16 @@
-﻿using System.Reflection;
+﻿using System.Resources;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MarkdownSharp")]
+[assembly: AssemblyTitle("MarkdownSharp.UWP")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Stack Exchange")]
-[assembly: AssemblyProduct("MarkdownSharp")]
+[assembly: AssemblyCompany("Heliconsoftware")]
+[assembly: AssemblyProduct("MarkdownSharp.UWP")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e187a0dc-254b-4082-9fe8-531609911964")]
+[assembly: Guid("08A02005-D999-4079-92BB-65B50882225D")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,5 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.5.1")]
+[assembly: AssemblyVersion("1.5.2")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguageAttribute("en-US")]
+
