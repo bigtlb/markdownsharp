@@ -2,16 +2,22 @@
 <package >
   <metadata>
     <id>MarkdownSharp.UWP</id>
-    <version>$version$</version>
+    <version>1.5.2</version>
     <title>MarkdownSharp.UWP</title>
     <authors>John Gruber, Milan Negovan, Jeff Atwood, jrummell, bigtlb</authors>
-    <owners>Stack Exchange</owners>
+    <owners>HeliconSoftware</owners>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <projectUrl>https://github.com/bigtlb/markdownsharp.uwp.git</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>UWP Package of MarkDownSharp, including recent patches and compiled regex.
-    Open source C# implementation of Markdown processor, as featured on Stack Overflow. NOTE: this package is not maintained by the project developers, I've simply made it available on NuGet.</description>
+    <description>UWP Package of MarkDownSharp, including latest patches and using compiled regex.
+    Open source C# implementation of Markdown processor, as featured on Stack Overflow.
+	
+	NOTE: this package is not maintained by the project developers, I've simply made it available on NuGet.</description>
     <copyright>Copyright 2016</copyright>
     <tags>markdown markdownsharp md stackexchange</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\MarkdownSharp.UWP.dll" target="lib\win81" />
+    <file src="bin\Release\MarkdownSharp.UWP.pdb" target="lib\win81" />
+  </files>
 </package>
